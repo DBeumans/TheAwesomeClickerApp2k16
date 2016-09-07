@@ -1,25 +1,32 @@
 ﻿using UnityEngine;
-using UnityEngine.EventSystems;
 using System.Collections;
 
-public class SendScore : EventTrigger {
+public class SendScore : MonoBehaviour {
 
     int SendScoreTo;
     Player _player;
 
+
     void Start()
     {
-        SendScoreTo = 10;
+        SendScoreTo = 1;
+        Reference();
+    }
+
+    void Reference()
+    {
         _player = GameObject.FindObjectOfType<Player>();
     }
 
-    public void OnPointerClick()
+    public void OnClick()
     {
         SendPlayerScore();
+        
     }
 
     void SendPlayerScore()
     {
         _player.RecievePlayerScore(SendScoreTo);
+        
     }
 }
