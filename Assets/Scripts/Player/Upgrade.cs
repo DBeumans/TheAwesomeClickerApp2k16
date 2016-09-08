@@ -20,7 +20,7 @@ public class Upgrade : MonoBehaviour {
     }
     void CheckUpgradeButtons()
     {
-        if(gameObject.name == "UpgradeButtonAddTwo")
+        if(gameObject.tag == "UpgradeTwo")
         {
             // increase coins
             // hide button
