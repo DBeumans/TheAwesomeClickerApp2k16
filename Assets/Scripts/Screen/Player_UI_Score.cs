@@ -12,8 +12,6 @@ public class Player_UI_Score : MonoBehaviour {
 
     [SerializeField]
     Text Text_Player_Score;
-    [SerializeField]
-    Text Text_Player_Saved_Score;
 
     Player _player;
     int recievedScore;
@@ -26,8 +24,7 @@ public class Player_UI_Score : MonoBehaviour {
 
     void ShowText()
     {
-        Text_Player_Score.text = UI_Player_score.ToString();
-        Text_Player_Saved_Score.text = PlayerPrefs.GetInt("PlayerScore").ToString();
+        Text_Player_Score.text = PlayerPrefs.GetInt("PlayerScore").ToString();
 
         Public_PlayerScore = UI_Player_score;
     }

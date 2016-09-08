@@ -17,7 +17,7 @@ public class Player : MonoBehaviour {
     }
     public void RecievePlayerScore (int score)
     {
-        PlayerScore += score;
+        PlayerScore = score;
         Debug.Log(PlayerScore);
         _player_ui_score.RecieveScore();
         _save.SaveFile();

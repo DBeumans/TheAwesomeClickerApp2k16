@@ -29,4 +29,9 @@ public class SendScore : MonoBehaviour {
         _player.RecievePlayerScore(SendScoreTo);
         
     }
+
+    public void ChangeScore(int score)
+    {
+        SendScoreTo = score;
+    }
 }
