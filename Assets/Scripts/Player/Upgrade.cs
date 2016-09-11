@@ -14,20 +14,18 @@ public class Upgrade : MonoBehaviour {
         _sendScore = GameObject.FindObjectOfType<SendScore>();
     }
 
-    public void OnClick()
+    public void OnClickUpgrade()
     {
         CheckUpgradeButtons();
     }
     void CheckUpgradeButtons()
     {
-        if(gameObject.tag == "UpgradeTwo")
+        Debug.Log("Choosing Which button is pressed:");
+        if (this.gameObject.name == "UpgradeButtonAddTwo") ;
         {
-            // increase coins
-            // hide button
-            Debug.Log("Changed Score, you gain +2.!");
+            Debug.Log("You will now obtain +2 score!");
             _sendScore.ChangeScore(UpgradeTwo);
-
-
         }
+
     }
 }

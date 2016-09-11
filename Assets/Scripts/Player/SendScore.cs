@@ -30,6 +30,7 @@ public class SendScore : MonoBehaviour {
         
     }
 
+    //change the score to howmuch the player is able to obtain per click.
     public void ChangeScore(int score)
     {
         SendScoreTo = score;
